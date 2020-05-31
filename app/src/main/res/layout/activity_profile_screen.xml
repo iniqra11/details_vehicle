@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_screen">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Remove Vehicle"
+                android:layout_weight="1"
+                android:id="@+id/removeVehicle"
+                />
+            <Button
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text = "Edit Details"
+                android:id="@+id/editVehicle"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number: "
+            android:id="@+id/number_text"/>
+        <TextView
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Make: "
+            android:id="@+id/make_text"/>
+        <TextView
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Model: "
+            android:id="@+id/model_text"/>
+        <TextView
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Variant: "
+            android:id="@+id/variant_text"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_vehicle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
